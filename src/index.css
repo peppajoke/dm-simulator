@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'VT323', 'Courier New', monospace;
+  color: #2b2418;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-smooth: never;
+  background: #1a1f26;
+  user-select: none;
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: 0.02em;
+}
+
+img.pixelated, .pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+}
+
+.crt-flicker {
+  animation: flicker 4s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  98% { opacity: 1; }
+  98.5% { opacity: 0.94; }
+  99% { opacity: 1; }
+}
+
+.no-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+.no-scrollbar::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+.no-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.3); }

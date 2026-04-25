@@ -1,0 +1,22 @@
+{
+  "id": "curse-of-strudel",
+  "title": "Curse of Strudel",
+  "blurb": "Gothic horror in the misty land of Barovino. Castle Ravenstollen looms. Count Strahdel craves the perfect strudel. Every NPC has a tragic backstory involving baked goods.",
+  "tags": ["gothic", "horror", "vampires", "baked-goods"],
+  "preferredToneSeed": { "dark": 0.6, "earnest": 0.3 },
+  "files": {
+    "lore": "lore.json",
+    "npcs": "npcs.json",
+    "encounters": "encounters.json",
+    "locations": "locations.json"
+  },
+  "assets": {
+    "splash": "sprites/strudel-splash.png",
+    "music": "audio/barovino-mists.ogg"
+  },
+  "openingHook": "An invitation, sealed with black wax and smelling faintly of cinnamon, slides under your door.",
+  "sessionStructure": {
+    "minSessionsToCredits": 1,
+    "creditsTrigger": "session-1-begins"
+  }
+}
